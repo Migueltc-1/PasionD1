@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pasión Deportiva: noticias, resultados y análisis del mundo del deporte.">
+  <title>Pasión Deportiva | Noticias y resultados</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topline">EL DEPORTE SE VIVE AQUÍ <span>·</span> Noticias, resultados y pasión</div>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Pasión Deportiva, inicio">
+      <span class="brand-mark">PD</span><span>PASIÓN<span class="brand-accent">DEPORTIVA</span></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a class="active" href="#inicio">Inicio</a><a href="#resultados">Resultados</a>
+      <a href="#ligas">Competiciones</a><a href="#futbol">Fútbol</a><a href="#otros-deportes">Otros deportes</a>
+      <a href="#analisis">Análisis</a>
+    </nav>
+    <button class="search-button" id="searchToggle" aria-label="Mostrar búsqueda">⌕</button>
+  </header>
+  <div class="search-panel" id="searchPanel" hidden>
+    <input id="searchInput" type="search" placeholder="Buscar una noticia o deporte..." aria-label="Buscar">
+    <button id="searchButton">Buscar</button>
+    <span id="searchMessage" aria-live="polite"></span>
+  </div>
+
+  <main id="inicio">
+    <section class="breaking"><span class="breaking-label">EN PORTADA</span><span>Tu dosis diaria de actualidad deportiva</span><span class="live-dot"></span></section>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">EL JUEGO NO SE DETIENE</p>
+        <h1>La pasión se juega <em>todos los días.</em></h1>
+        <p>Noticias, historias y análisis para quienes sienten el deporte dentro y fuera de la cancha.</p>
+        <a class="primary-button" href="#ultimas">LEER LAS ÚLTIMAS NOTICIAS <span>↗</span></a>
+      </div>
+      <div class="hero-art" role="img" aria-label="Ilustración deportiva con un balón de fútbol">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="hero-number">01<span>/04</span></div>
+        <div class="ball">⚽</div>
+        <div class="hero-tag">MÁS QUE UN JUEGO</div>
+      </div>
+    </section>
+
+    <section class="content-section" id="ultimas">
+      <div class="section-heading"><div><p class="eyebrow">MANTENTE AL DÍA</p><h2>Lo último <span>del deporte</span></h2></div><a href="#noticias" class="text-link">TODAS LAS NOTICIAS ↗</a></div>
+      <div class="news-grid" id="noticias">
+        <article class="news-card featured" data-search="fútbol táctica análisis estrategia">
+          <div class="news-visual visual-pitch"><span class="visual-label">FÚTBOL</span><span class="visual-symbol">⚽</span><span class="visual-caption">EL JUEGO<br>EN EQUIPO</span></div>
+          <div class="news-body"><p class="meta">ANÁLISIS <span>·</span> 5 MIN DE LECTURA</p><h3>Más allá del marcador: las claves que definen un gran partido</h3><p>La estrategia, la presión y las decisiones en los momentos decisivos también cuentan la historia.</p><a href="#analisis" class="text-link">LEER ANÁLISIS ↗</a></div>
+        </article>
+        <article class="news-card" data-search="baloncesto basket entrenamiento equipo">
+          <div class="news-visual visual-court"><span class="visual-label">BALONCESTO</span><span class="visual-symbol">🏀</span></div>
+          <div class="news-body"><p class="meta">EN LA CANCHA <span>·</span> 4 MIN</p><h3>Talento y disciplina: la fórmula para competir al máximo nivel</h3><a href="#otros-deportes" class="text-link">DESCUBRIR ↗</a></div>
+        </article>
+        <article class="news-card" data-search="tenis raqueta concentración entrenamiento">
+          <div class="news-visual visual-tennis"><span class="visual-label">TENIS</span><span class="visual-symbol">🎾</span></div>
+          <div class="news-body"><p class="meta">MENTALIDAD <span>·</span> 3 MIN</p><h3>El factor mental: cómo mantener la concentración punto a punto</h3><a href="#otros-deportes" class="text-link">DESCUBRIR ↗</a></div>
+        </article>
+      </div>
+      <p class="demo-note">Contenido demostrativo: los titulares de esta página son ejemplos editoriales, no noticias de última hora.</p>
+    </section>
+
+    <section class="score-section" id="resultados">
+      <div class="section-heading"><div><p class="eyebrow">SIGUE LA ACCIÓN</p><h2>Marcadores <span>de ejemplo</span></h2></div><span class="section-kicker">PANEL DE RESULTADOS</span></div>
+      <div class="score-grid">
+        <article class="score-card"><div class="score-top"><span>LIGA · FÚTBOL</span><span class="status">EJEMPLO</span></div><div class="teams"><span><b class="team-icon">U</b> Universitario</span><strong>2 — 1</strong><span><b class="team-icon team-alt">C</b> Cristal</span></div><div class="score-bottom">Partido de demostración <span>⚽</span></div></article>
+        <article class="score-card"><div class="score-top"><span>NBA · BALONCESTO</span><span class="status">EJEMPLO</span></div><div class="teams"><span><b class="team-icon team-blue">L</b> Lakers</span><strong>98 — 94</strong><span><b class="team-icon team-red">B</b> Bulls</span></div><div class="score-bottom">Partido de demostración <span>🏀</span></div></article>
+      </div>
+    </section>
+
+    <section class="content-section sports-section" id="futbol">
+      <div class="section-heading"><div><p class="eyebrow">EL DEPORTE REY</p><h2>El mundo del <span>fútbol</span></h2></div></div>
+      <div class="sport-banner"><div><p class="eyebrow">PASIÓN EN CADA JUGADA</p><h3>Un deporte.<br>Miles de historias.</h3><p>Desde el fútbol local hasta los grandes escenarios internacionales, vive cada partido con contexto y opinión.</p><a class="primary-button" href="#analisis">EXPLORAR ANÁLISIS ↗</a></div><div class="banner-ball">⚽</div></div>
+    </section>
+
+    <section class="content-section" id="ligas">
+      <div class="section-heading"><div><p class="eyebrow">FÚTBOL INTERNACIONAL</p><h2>Las grandes <span>competiciones</span></h2></div></div>
+      <div class="league-grid">
+        <a class="league-card" href="#analisis"><span class="league-icon">🏆</span><span><span class="league-region">EUROPA · CLUBES</span><b>UEFA Champions League</b><small>Noticias, cruces y noches europeas</small></span></a>
+        <a class="league-card" href="#analisis"><span class="league-icon">🌎</span><span><span class="league-region">SUDAMÉRICA · CLUBES</span><b>Copa Libertadores</b><small>La gloria continental y sus protagonistas</small></span></a>
+        <a class="league-card" href="#analisis"><span class="league-icon">🏴</span><span><span class="league-region">INGLATERRA</span><b>Premier League</b><small>La liga inglesa, jornada a jornada</small></span></a>
+        <a class="league-card" href="#analisis"><span class="league-icon">🇪🇸</span><span><span class="league-region">ESPAÑA</span><b>LaLiga</b><small>Clubes, clásicos y análisis</small></span></a>
+        <a class="league-card" href="#analisis"><span class="league-icon">🇮🇹</span><span><span class="league-region">ITALIA</span><b>Serie A</b><small>La actualidad del fútbol italiano</small></span></a>
+        <a class="league-card" href="#analisis"><span class="league-icon">🇩🇪</span><span><span class="league-region">ALEMANIA</span><b>Bundesliga</b><small>Goles, equipos y figuras</small></span></a>
+        <a class="league-card" href="#analisis"><span class="league-icon">🇵🇪</span><span><span class="league-region">PERÚ</span><b>Liga 1</b><small>Universitario, Alianza, Cristal y más</small></span></a>
+        <a class="league-card" href="#analisis"><span class="league-icon">🇧🇷</span><span><span class="league-region">BRASIL</span><b>Brasileirão</b><small>Uno de los torneos más competitivos</small></span></a>
+        <a class="league-card" href="#analisis"><span class="league-icon">🇦🇷</span><span><span class="league-region">ARGENTINA</span><b>Primera División</b><small>Clásicos y actualidad argentina</small></span></a>
+      </div>
+      <p class="demo-note">Estas secciones son categorías editoriales. Para mostrar calendarios y tablas actualizadas, habrá que conectarlas a una fuente de datos deportivos.</p>
+    </section>
+
+    <section class="content-section" id="otros-deportes">
+      <div class="section-heading"><div><p class="eyebrow">MÁS QUE FÚTBOL</p><h2>Todos los <span>deportes</span></h2></div></div>
+      <div class="sports-grid">
+        <a class="sport-tile" href="#noticias"><span>🏀</span><b>Baloncesto</b><small>NBA · Ligas</small><i>↗</i></a>
+        <a class="sport-tile" href="#noticias"><span>🎾</span><b>Tenis</b><small>Grand Slams · ATP</small><i>↗</i></a>
+        <a class="sport-tile" href="#noticias"><span>🏁</span><b>Motor</b><small>F1 · MotoGP</small><i>↗</i></a>
+        <a class="sport-tile" href="#noticias"><span>🏐</span><b>Vóley</b><small>Clubes · Selecciones</small><i>↗</i></a>
+      </div>
+    </section>
+
+    <section class="analysis-section" id="analisis">
+      <div><p class="eyebrow">LA MIRADA EXPERTA</p><h2>El resultado cuenta.<br><em>La historia importa.</em></h2></div>
+      <p>Explora tácticas, rendimiento, preparación y los detalles que hacen especial cada competencia. El deporte se entiende mejor cuando miramos más allá del marcador.</p>
+    </section>
+
+    <section class="newsletter">
+      <div><p class="eyebrow">ÚNETE AL EQUIPO</p><h2>El deporte, directo a tu bandeja.</h2><p>Suscríbete a nuestro boletín de demostración.</p></div>
+      <form id="newsletterForm"><label for="emailInput" class="visually-hidden">Tu correo electrónico</label><input id="emailInput" type="email" placeholder="Tu correo electrónico" required><button type="submit">SUSCRIBIRME ↗</button><p id="newsletterMessage" aria-live="polite"></p></form>
+    </section>
+  </main>
+  <footer class="footer"><a class="brand footer-brand" href="#inicio"><span class="brand-mark">PD</span><span>PASIÓN<span class="brand-accent">DEPORTIVA</span></span></a><p>El deporte nos une. © <span id="year"></span> Pasión Deportiva.</p><div><a href="#inicio">Inicio</a><a href="#ligas">Competiciones</a><a href="#resultados">Resultados</a><a href="#otros-deportes">Deportes</a></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
